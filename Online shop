@@ -1,0 +1,43 @@
+#Input the name of passenger 
+name = input("Enter the name of passenger : ") 
+ticket_price = 0 
+
+ 
+
+#display location options to travel 
+print("London - ") 
+print("Manchester - ") 
+print("Birmingham - ") 
+
+ 
+
+# Input the city to travel to 
+city = input("Enter the city to travel :") 
+
+ 
+
+#Input the required number of tickets 
+no_of_tickets = int(input("Enter the number of required tickets : ")) 
+
+ 
+
+if city.lower() == "london": 
+ticket_price = 10.15 * no_of_tickets 
+elif city.lower() == "manchester": 
+ticket_price = 22.50 * no_of_tickets 
+elif city.lower() == "birmingham": 
+ticket_price = 21.40 * no_of_tickets 
+
+else: 
+print("invalid city") 
+
+ 
+
+print("name_of_customer.txt") 
+print(F"Passenger Name : {name} ") 
+print(F"Location : {city} ") 
+print(F"Number of Tickets : {no_of_tickets}") 
+print(F"Total price = {ticket_price}") 
+
+ 
+
